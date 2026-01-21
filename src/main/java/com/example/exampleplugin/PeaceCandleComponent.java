@@ -53,6 +53,8 @@ public class PeaceCandleComponent implements Component<ChunkStore> {
     public void setOwnerUuid(UUID ownerUuid) { this.ownerUuid = ownerUuid; }
     public void setSuppressorUuid(UUID suppressorUuid) { this.suppressorUuid = suppressorUuid; }
 
+    public void removeSuppressorUuid(){this.suppressorUuid = null; }
+
     @Nullable
     @Override
     public Component<ChunkStore> clone() {
